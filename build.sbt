@@ -10,11 +10,15 @@ scalacOptions ++= Seq(
   "-Ymacro-annotations",
 )
 
+val akkaVersion = "2.6.19"
+val akkaHttpVersion = "10.2.9"
+val scalaTestVersion = "3.2.13"
+
 libraryDependencies ++= Seq(
-  "com.typesafe.akka" %% "akka-stream" % "2.6.19",
-  "com.typesafe.akka" %% "akka-stream-testkit" % "2.6.19" % Test,
-  "com.typesafe.akka" %% "akka-http-core" % "10.2.9",
-  "com.typesafe.akka" %% "akka-http-testkit" % "10.2.9" % Test,
-  "com.typesafe.akka" %% "akka-http-spray-json" % "10.2.9",
-  "org.scalatest" %% "scalatest" % "3.2.13" % Test
+  "com.typesafe.akka" %% "akka-stream" % akkaVersion,
+  "com.typesafe.akka" %% "akka-stream-testkit" % akkaVersion % Test,
+  "com.typesafe.akka" %% "akka-http-core" % akkaHttpVersion,
+  "com.typesafe.akka" %% "akka-http-testkit" % akkaHttpVersion % Test,
+  "com.typesafe.akka" %% "akka-http-spray-json" % akkaHttpVersion,
+  "org.scalatest" %% "scalatest" % scalaTestVersion % Test
 )
