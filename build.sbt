@@ -22,3 +22,5 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-http-spray-json" % akkaHttpVersion,
   "org.scalatest" %% "scalatest" % scalaTestVersion % Test
 )
+
+fork / run := true
